@@ -16,11 +16,11 @@
               class="text-center d-flex justify-center align-center px-4"
               height="350"
               :elevation="isHovering ? 2 : 0"
-              :color="isHovering ? `#F9F4D9` : `white`"
+              :color="isHovering ? `#023047` : `#fff`"
             >
               <div class="parent">
                 <span
-                  ><v-icon size="70" color="#EE7300">{{
+                  ><v-icon size="70" color="#FB8500">{{
                     card.icon
                   }}</v-icon></span
                 >

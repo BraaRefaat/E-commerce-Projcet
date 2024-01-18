@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 // Pinia
 import { createPinia } from "pinia";
+// vue3-particles
+import Particles from "vue3-particles";
 
 // Emitter
 import mitt from "mitt";
@@ -28,6 +30,7 @@ const vuetify = createVuetify({
 createApp(App)
   .use(vuetify)
   .use(createPinia())
+  .use(Particles)
   .provide("Emitter", Emitter)
   .use(router)
   .mount("#app");

@@ -1,6 +1,6 @@
 <template>
   <div class="check-out">
-    <v-container fluid class="ma-0 pa-0">
+    <v-container fluid class="ma-0 pa-0" style="overflow-y: hidden">
       <v-row dir="rtl">
         <v-col cols="12" md="6" lg="7" class="order-1 order-md-0">
           <v-card
@@ -9,8 +9,10 @@
             class="w-100 checkout-left mb-10 mb-md-0 mb-lg-0"
             style="padding: 60px 120px 0 40px"
           >
-            <v-card-title style="font-weight: bold; color: #9f6025">
-              قصر نابولي
+            <v-card-title
+              style="font-weight: bold; font-size: 23px; color: #1e9ad1"
+            >
+              الرحاب
             </v-card-title>
             <v-breadcrumbs
               :items="['عربة التسوق', 'معلومات الدفع']"
@@ -25,7 +27,7 @@
             >
               <v-btn
                 variant="elevated"
-                color="#F6AE2D"
+                color="#FFB703"
                 class="flex-grow-1"
                 height="45"
               >
@@ -128,7 +130,7 @@
                 rounded="md"
                 class="py-0 px-0 text-center"
                 style="width: 100%"
-                focused="#ee7300"
+                focused="#1e9ad1"
                 reverse
               >
               </v-select>
@@ -159,7 +161,7 @@
                 variant="elevated"
                 height="45"
                 width="150"
-                color="#9f6025"
+                color="#023047"
                 style="letter-spacing: normal"
                 @click="dialog = true"
                 >تأكيد الطلب</v-btn
@@ -171,8 +173,8 @@
           <v-card
             class="checkout-right"
             elevation="0"
-            color="#F9F4D9"
-            style="height: 100vh; width: 100%; padding: 60px 40px 0 120px"
+            color="#8ECAE6"
+            style="height: 101.5vh; width: 100%; padding: 60px 40px 0 120px"
           >
             <v-card
               class="child-card mb-7"
@@ -191,7 +193,7 @@
                 <v-badge
                   location="top left"
                   :content="product.quantity"
-                  color="#9F6025"
+                  color="#FB8500"
                   style="z-index: 99"
                 >
                   <img
@@ -199,7 +201,7 @@
                     width="50"
                     height="50"
                     alt=""
-                    style="border-radius: 30%; border: 1px solid #ac835c"
+                    style="border-radius: 30%; border: 1px solid #033e5b"
                   />
                 </v-badge>
                 <div class="title-parent flex-grow-1 w-50">
@@ -295,7 +297,7 @@ const calcTotalPrice = computed(() => {
     }
     &::-webkit-scrollbar-thumb {
       width: 4px;
-      background-color: #9f6025;
+      background-color: #023047;
       border-radius: 30px;
     }
     &::-webkit-scrollbar-track {

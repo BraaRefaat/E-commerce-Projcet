@@ -7,23 +7,41 @@
         :style="`margin-top: ${
           $route.name == 'check_out'
             ? '0'
+            : $route.name == 'Login_Sign_in'
+            ? '0'
             : windowWidth <= 1074
             ? '80px'
-            : '180px'
+            : '160px'
         };`"
       >
         <slot></slot>
       </v-main>
       <AppBar
-        v-show="$route.name != 'check_out' && !showFixed && windowWidth > 1074"
+        v-show="
+          $route.name != 'check_out' &&
+          $route.name != 'Login_Sign_in' &&
+          !showFixed &&
+          windowWidth > 1074
+        "
       />
       <ResponsiveNav
-        v-show="$route.name != 'check_out' && windowWidth <= 1074"
+        v-show="
+          $route.name != 'check_out' &&
+          $route.name != 'Login_Sign_in' &&
+          windowWidth <= 1074
+        "
       />
       <FixedNav
-        v-show="$route.name != 'check_out' && showFixed && windowWidth > 1074"
+        v-show="
+          $route.name != 'check_out' &&
+          $route.name != 'Login_Sign_in' &&
+          showFixed &&
+          windowWidth > 1074
+        "
       />
-      <AppFooter v-show="$route.name != 'check_out'" />
+      <AppFooter
+        v-show="$route.name != 'check_out' && $route.name != 'Login_Sign_in'"
+      />
     </v-layout>
   </div>
 </template>
@@ -55,7 +73,24 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
+::-webkit-scrollbar {
+  width: 2px;
+  height: 100%;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb {
+  width: 2px;
+  background-color: #1e9ad1;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-track {
+  width: 2px;
+  background-color: transparent;
+  border-radius: 30px;
+}
+
 .v-main {
+  overflow-x: hidden;
   .quick-view {
     margin: 0 !important;
   }

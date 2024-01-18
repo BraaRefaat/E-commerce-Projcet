@@ -10,14 +10,14 @@
       <v-card elevation="0" class="px-0 mt-2 ml-2">
         <v-card-title
           class="px-0 d-flex justify-space-between align-center"
-          style="font-size: 17px; font-weight: bold; color: #9f6025"
+          style="font-size: 17px; font-weight: bold; color: #1e9ad1"
         >
           عربة التسوق
           <v-btn
             @click="drawer = false"
             elevation="0"
             size="40"
-            color="#9f6025"
+            color="#1e9ad1"
             variant="text"
             style="border-radius: 50%"
             ><v-icon>mdi-close</v-icon></v-btn
@@ -257,7 +257,7 @@
             density="compact"
             height="45"
             class="w-100"
-            color="#ee7300"
+            color="#1e9ad1"
             @click="toCheckOut"
             >الدفع</v-btn
           >
@@ -272,7 +272,7 @@
             density="compact"
             height="45"
             class="w-100 mx-0"
-            color="#ee7300"
+            color="#1e9ad1"
             @click="toCartPage"
             >عرض عربة التسوق</v-btn
           >
@@ -325,21 +325,24 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-.v-card {
-  &::-webkit-scrollbar {
-    width: 5px;
-    height: 100%;
-    border-radius: 30px;
-  }
-  &::-webkit-scrollbar-thumb {
-    width: 5px;
-    background-color: #9f6025;
-    border-radius: 30px;
-  }
-  &::-webkit-scrollbar-track {
-    width: 5px;
-    background-color: #d1a47a;
-    border-radius: 30px;
+.v-navigation-drawer__content {
+  overflow-y: hidden !important;
+  .v-card {
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 100%;
+      border-radius: 30px;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 5px;
+      background-color: #023047;
+      border-radius: 30px;
+    }
+    &::-webkit-scrollbar-track {
+      width: 5px;
+      background-color: #628698;
+      border-radius: 30px;
+    }
   }
 }
 </style>

@@ -26,6 +26,11 @@ const routes = [
     name: "check_out",
     component: () => import("@/views/CheckOut"),
   },
+  {
+    path: "/Login-Sign-in",
+    name: "Login_Sign_in",
+    component: () => import("@/views/Login&SigninForm"),
+  },
 ];
 
 const router = createRouter({

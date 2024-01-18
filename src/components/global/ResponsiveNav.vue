@@ -1,36 +1,41 @@
 <template>
   <div class="res-nav">
-    <v-app-bar color="#F9F4D9" height="85">
+    <v-app-bar color="#023047" height="85">
       <v-container fluid>
         <v-row dir="rtl" class="align-center">
           <v-col cols="4" class="d-flex align-center">
             <v-app-bar-nav-icon
-              color="#ee7300"
+              color="#1E9AD6"
               variant="flat"
               @click="openMenu"
             ></v-app-bar-nav-icon>
             <v-btn
-              color="#ee7300"
+              color="#1E9AD6"
               variant="text"
               size="50"
               style="border-radius: 50%"
               class="mr-7"
             >
-              <v-icon color="#ee7300" class="" size="26">mdi-magnify</v-icon>
+              <v-icon color="#1E9AD6" class="" size="26">mdi-magnify</v-icon>
             </v-btn>
           </v-col>
           <v-col cols="4" class="d-flex justify-center align-center">
             <img
-              src="../../assets/images/logo2.png"
-              style="width: 60px"
+              src="../../assets/images/elrehab-logo2.png"
+              style="width: 45px"
               @click="$router.push({ name: 'home' })"
               alt=""
             />
           </v-col>
           <v-col cols="4" class="d-flex justify-end">
             <div class="account">
-              <v-btn :ripple="false" size="50" style="border-radius: 50%">
-                <v-icon color="#ee7300" size="27">mdi-account-outline</v-icon>
+              <v-btn
+                :ripple="false"
+                size="50"
+                style="border-radius: 50%"
+                @click="$router.push({ name: 'Login_Sign_in' })"
+              >
+                <v-icon color="#1E9AD6" size="27">mdi-account-outline</v-icon>
               </v-btn>
             </div>
             <div class="cart d-flex flex-column align-center mr-7">
@@ -39,7 +44,7 @@
                 :content="cartItems.length"
                 v-if="cartItems.length"
                 offset-x="-12"
-                color="#9F6025"
+                color="#FB8500"
                 style="z-index: 999"
               ></v-badge>
               <v-btn
@@ -51,7 +56,7 @@
                 }`"
                 @click="openCart"
               >
-                <v-icon color="#ee7300" size="27">mdi-cart-outline</v-icon>
+                <v-icon color="#1E9AD6" size="27">mdi-cart-outline</v-icon>
               </v-btn>
             </div>
           </v-col>

@@ -12,7 +12,7 @@
         "
         >mdi-check</v-icon
       >
-      <v-card-title style="font-size: 30px; font-weight: bold; color: #9f6025">
+      <v-card-title style="font-size: 30px; font-weight: bold; color: #023047">
         تم تأكيد الطلب بنجاح
       </v-card-title>
       <v-card-actions>
@@ -20,7 +20,7 @@
           variant="elevated"
           class="mt-5"
           style="letter-spacing: normal"
-          color="#ee7300"
+          color="#1e9ad6"
           @click="resetOrderProducts"
           >حسناً</v-btn
         >

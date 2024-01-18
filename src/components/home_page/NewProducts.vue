@@ -1,7 +1,7 @@
 <template>
   <div class="new-products pt-12">
     <div class="title mb-10 px-5" dir="rtl">
-      <h2 style="font-weight: 900; color: #af641e">المنتجات الجديدة</h2>
+      <h2 style="font-weight: 900; color: #023047">المنتجات الجديدة</h2>
     </div>
     <v-container fluid>
       <v-row>
@@ -139,7 +139,7 @@
         </v-col>
         <v-col cols="12" md="4">
           <img
-            src="../../assets/images/napoli-new-products.jpg"
+            src="../../assets/images/elrehab-new-products.jpg"
             class="w-100"
             style="border-radius: 7px"
             alt=""
@@ -187,7 +187,7 @@ const openQuickView = (item) => {
     .swiper-pagination-bullet {
       width: 10px;
       height: 10px;
-      background-color: #ee7300;
+      background-color: #1e9ad1;
     }
   }
   .img-parent:hover {

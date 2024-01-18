@@ -6,7 +6,7 @@
           position: absolute;
           top: -12px;
           right: -12px;
-          background-color: #c32929;
+          background-color: #ae2012;
           color: #ffffff;
           z-index: 99;
           border-radius: 30px;
@@ -168,19 +168,21 @@
                     class="w-75 text-white"
                     style="
                       text-transform: none;
-                      background-color: #af641e;
+                      background-color: #023047;
                       border-radius: 30px;
                       font-weight: 600;
+                      letter-spacing: normal;
+                      font-family: Tahoma;
                     "
                     density="compact"
                     height="45"
                     @click="addToCart(product)"
                     :loading="btnLoading"
-                    >Add To Cart</v-btn
+                    >إضافة لعربة التسوق</v-btn
                   >
                   <div class="wishlist d-flex flex-column align-center">
                     <v-btn style="border-radius: 30px">
-                      <v-icon color="#ee7300" size="27"
+                      <v-icon color="#1e9ad1" size="27"
                         >mdi-heart-outline</v-icon
                       >
                       <v-tooltip activator="parent" location="bottom center"

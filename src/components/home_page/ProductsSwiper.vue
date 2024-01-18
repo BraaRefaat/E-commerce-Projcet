@@ -210,7 +210,7 @@ const modules = [Pagination, Navigation, Autoplay];
   .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    background-color: #ee7300;
+    background-color: #1e9ad1;
   }
   .img-parent:hover {
     .quick-view-btn {

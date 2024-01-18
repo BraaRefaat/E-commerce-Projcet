@@ -6,7 +6,7 @@
     <ProductsSwiper
       :products="flashDeals"
       title="عروض نابولي"
-      title-color="#c32929"
+      title-color="#AE2012"
     />
     <TopCategories />
     <NewProducts :products="newProducts" />
@@ -14,7 +14,7 @@
     <ProductsSwiper
       :products="topProducts"
       title="منتجات مميزة"
-      title-color="#af641e"
+      title-color="#023047"
     />
   </div>
 </template>

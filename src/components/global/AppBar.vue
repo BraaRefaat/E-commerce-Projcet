@@ -1,13 +1,13 @@
 <template>
   <div class="nav-bar">
-    <v-app-bar color="#F9F4D9" height="fit-content" absolute>
+    <v-app-bar color="#023047" height="fit-content" absolute>
       <v-container>
         <v-row dir="rtl">
           <v-col cols="2">
             <img
-              src="@/assets/images/logo2.png"
+              src="../../assets/images/elrehab-logo2.png"
               alt="Logo"
-              style="width: 90px"
+              style="width: 70px"
               @click="$router.push({ name: 'home' })"
             />
           </v-col>
@@ -38,15 +38,18 @@
           <v-col cols="3" class="d-flex justify-space-between align-center">
             <div class="wishlist d-flex flex-column align-center">
               <v-btn :ripple="false">
-                <v-icon color="#ee7300" size="27">mdi-heart-outline</v-icon>
+                <v-icon color="#1E9AD6" size="27">mdi-heart-outline</v-icon>
                 <v-tooltip activator="parent" location="bottom center"
                   >المفضلة</v-tooltip
                 >
               </v-btn>
             </div>
             <div class="account d-flex flex-column align-center">
-              <v-btn :ripple="false">
-                <v-icon color="#ee7300" size="27">mdi-account-outline</v-icon>
+              <v-btn
+                :ripple="false"
+                @click="$router.push({ name: 'Login_Sign_in' })"
+              >
+                <v-icon color="#1E9AD6" size="27">mdi-account-outline</v-icon>
                 <v-tooltip activator="parent" location="bottom center"
                   >الحساب</v-tooltip
                 >
@@ -57,7 +60,7 @@
                 location="top left"
                 :content="cartItems.length"
                 offset-x="-14"
-                color="#9F6025"
+                color="#FB8500"
                 style="z-index: 999"
                 v-if="cartItems.length"
               ></v-badge>
@@ -68,7 +71,7 @@
                 }`"
                 @click="openCart"
               >
-                <v-icon color="#ee7300" size="27">mdi-cart-outline</v-icon>
+                <v-icon color="#1E9AD6" size="27">mdi-cart-outline</v-icon>
                 <v-tooltip activator="parent" location="bottom center"
                   >عربة التسوق</v-tooltip
                 >
@@ -95,8 +98,8 @@
           <v-col cols="2">
             <div class="help">
               <v-btn>
-                <v-icon size="27">mdi-face-agent</v-icon>
-                <span class="mx-1">الدعم فني</span>
+                <v-icon size="27" color="#F3FDFC">mdi-face-agent</v-icon>
+                <span class="mx-1" style="color: #f3fdfc">الدعم فني</span>
               </v-btn>
             </div>
           </v-col>
@@ -126,7 +129,7 @@ img {
   transform: scale(1.3);
   transition: 0.3s;
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.4);
     cursor: pointer;
   }
 }
@@ -136,12 +139,12 @@ input {
   border: #2a2a2a 1px solid;
   outline: none;
   &:focus {
-    border: #ee7300 2px solid;
+    border: #1e9ad6 3px solid;
   }
 }
 li {
   a {
-    color: #2a2a2a;
+    color: #f3fdfc;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
@@ -153,7 +156,7 @@ li {
       content: "";
       height: 3px;
       width: 0%;
-      background: #ee7300;
+      background: #1e9ad6;
       position: absolute;
       right: 0;
       bottom: -10px;

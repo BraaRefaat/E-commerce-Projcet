@@ -6,8 +6,8 @@
           <v-col cols="12" sm="12" md="4" lg="4">
             <v-card elevation="0" color="transparent" class="contact-info">
               <img
-                src="../../assets/images/logo2.png"
-                style="width: 90px"
+                src="../../assets/images/elrehab-logo2.png"
+                style="width: 70px"
                 @click="$router.push({ name: 'home' })"
                 alt=""
               />
@@ -50,7 +50,7 @@
           <v-col cols="12" sm="6" md="4" lg="2">
             <v-card elevation="0" color="transparent">
               <v-card-title
-                style="color: #af641e; font-size: 1rem; font-weight: 900"
+                style="color: #1e9ad6; font-size: 1rem; font-weight: 900"
                 class="px-0"
                 >أقسامنا</v-card-title
               >
@@ -79,7 +79,7 @@
           <v-col cols="12" sm="6" md="4" lg="2">
             <v-card elevation="0" color="transparent" class="further-info">
               <v-card-title
-                style="color: #af641e; font-size: 1rem; font-weight: 900"
+                style="color: #1e9ad6; font-size: 1rem; font-weight: 900"
                 class="px-0"
                 >معلومات إضافية</v-card-title
               >
@@ -89,9 +89,9 @@
           </v-col>
         </v-row>
         <div class="mt-5">
-          <v-divider color="#ee7300"></v-divider>
-          <v-divider color="#ee7300"></v-divider>
-          <v-divider color="#ee7300"></v-divider>
+          <v-divider color="#1E9AD6"></v-divider>
+          <v-divider color="#1E9AD6"></v-divider>
+          <v-divider color="#1E9AD6"></v-divider>
         </div>
         <v-row dir="rtl" class="py-7 text-center">
           <v-col cols="12" md="6">
@@ -138,7 +138,7 @@ li {
     text-decoration: none;
     transition: 0.3s;
     &:hover {
-      color: #ee7300;
+      color: #fb8500;
     }
   }
 }
@@ -149,19 +149,20 @@ li {
   color: #5f5f5f;
   transition: 0.3s;
   &:hover {
-    color: #ee7300;
+    color: #fb8500;
   }
 }
 
 .social-media {
+  padding: 0 20px;
   .v-icon {
     cursor: pointer;
-    background: #af641e;
+    background: #023047;
     border-radius: 50%;
     transition: 0.3s all ease-in-out;
     &:hover {
       border-radius: 30%;
-      background: #ee7300;
+      background: #1e9ad6;
     }
   }
 }
@@ -171,11 +172,12 @@ li {
     cursor: pointer;
     transition: 0.3s;
     &:hover {
-      color: #ee7300;
+      color: #fb8500;
     }
   }
 }
 .contact-info {
+  padding: 20px 20px;
   img {
     transform: scale(1.3);
     transition: 0.3s;

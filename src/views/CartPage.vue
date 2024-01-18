@@ -15,7 +15,7 @@
         <v-col cols="12" class="pt-0">
           <v-card-title
             class="px-0 pb-0 d-flex justify-space-between align-center"
-            style="font-size: 27px; font-weight: bold; color: #9f6025"
+            style="font-size: 27px; font-weight: bold; color: #023047"
           >
             عربة التسوق
           </v-card-title>
@@ -349,7 +349,7 @@
                 density="compact"
                 height="45"
                 class="w-100"
-                color="#ee7300"
+                color="#1e9ad1"
                 >حساب قيمة الشحن</v-btn
               >
             </v-card-actions>
@@ -376,7 +376,7 @@
                 density="compact"
                 height="45"
                 class="w-100 mx-0"
-                color="#ee7300"
+                color="#1e9ad1"
                 @click="toCheckOut"
                 >الانتقال للدفع</v-btn
               >
@@ -387,7 +387,7 @@
                 density="compact"
                 height="45"
                 class="w-100 mx-0"
-                color="#ee7300"
+                color="#1e9ad1"
                 @click="toCartPage"
                 >متابعة التسوق</v-btn
               >

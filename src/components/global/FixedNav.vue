@@ -1,12 +1,12 @@
 <template>
   <div class="fix-nav">
-    <v-app-bar color="#F9F4D9" height="100">
+    <v-app-bar color="#023047" height="100">
       <v-container fluid>
         <v-row dir="rtl">
           <v-col cols="2">
             <img
-              class="w-50"
-              src="../../assets/images/logo2.png"
+              style="width: 40%"
+              src="../../assets/images/elrehab-logo2.png"
               @click="$router.push({ name: 'home' })"
               alt=""
             />
@@ -33,7 +33,7 @@
             style="gap: 20px"
           >
             <v-btn>
-              <v-icon size="27" color="#ee7300">mdi-magnify</v-icon>
+              <v-icon size="27" color="#1E9AD6">mdi-magnify</v-icon>
               <v-tooltip activator="parent" location="bottom center"
                 >بحث</v-tooltip
               >
@@ -44,7 +44,7 @@
                 :content="cartItems.length"
                 v-if="cartItems.length"
                 offset-x="-14"
-                color="#9F6025"
+                color="#FB8500"
                 style="z-index: 999"
               ></v-badge>
               <v-btn
@@ -54,7 +54,7 @@
                 }`"
                 @click="openCart"
               >
-                <v-icon color="#ee7300" size="27">mdi-cart-outline</v-icon>
+                <v-icon color="#1E9AD6" size="27">mdi-cart-outline</v-icon>
                 <v-tooltip activator="parent" location="bottom center"
                   >عربة التسوق</v-tooltip
                 >
@@ -86,13 +86,13 @@ const { cartItems } = storeToRefs(cartStore);
 img {
   transition: 0.3s;
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
   }
 }
 li {
   a {
-    color: #2a2a2a;
+    color: #f3fdfc;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
@@ -104,7 +104,7 @@ li {
       content: "";
       height: 3px;
       width: 0%;
-      background: #ee7300;
+      background: #1e9ad6;
       position: absolute;
       right: 0;
       bottom: -10px;

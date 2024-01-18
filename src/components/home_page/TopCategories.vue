@@ -2,7 +2,7 @@
   <div class="top-categories" dir="rtl">
     <div class="napoli-banner">
       <img
-        src="../../assets/images/napoli-banner-cat.jpg"
+        src="../../assets/images/elrehab-mid-banner.jpg"
         class="w-100"
         style="height: 400px"
         alt=""
@@ -12,7 +12,7 @@
       <div class="title d-flex justify-center align-center px-5 mb-3">
         <h2
           class="text-center flex-grow-1"
-          style="font-weight: 900; color: #af641e"
+          style="font-weight: 900; color: #023047"
         >
           تصنيفات مميزة
         </h2>
@@ -35,15 +35,18 @@
                     height: 165px;
                     overflow: hidden;
                     border-radius: 50%;
-                    border: 1px solid gray;
+                    background-color: #8ecae6;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                   "
                 >
                   <img
                     v-bind="props"
-                    :src="category.image"
+                    :src="require(`@/assets/images/${category.image}`)"
                     :style="`
                     border-radius: 50%;
-                    width: 100%;
+                    width: 80%;
                     height: 100%;
                     cursor: pointer;
                     transition: 0.4s all ease-in-out;
@@ -68,64 +71,52 @@
 import { ref } from "vue";
 const categories = ref([
   {
-    title: "حلاوة المولد",
-    image:
-      "https://mcprod.hyperone.com.eg/media/catalog/product/cache/1ca275941aea0ae98b372dcb44b7c67a/f/i/file_69.jpg",
+    title: "التكييفات",
+    image: "Modern-air-conditioning-PNG-1-removebg-preview.png",
   },
   {
-    title: "حلاوة المولد",
-    image:
-      "https://mcprod.hyperone.com.eg/media/catalog/product/cache/1ca275941aea0ae98b372dcb44b7c67a/f/i/file_69.jpg",
+    title: "التكييفات",
+    image: "Modern-air-conditioning-PNG-1-removebg-preview.png",
   },
   {
-    title: "حلاوة المولد",
-    image:
-      "https://mcprod.hyperone.com.eg/media/catalog/product/cache/1ca275941aea0ae98b372dcb44b7c67a/f/i/file_69.jpg",
+    title: "التكييفات",
+    image: "Modern-air-conditioning-PNG-1-removebg-preview.png",
   },
   {
-    title: "حلاوة المولد",
-    image:
-      "https://mcprod.hyperone.com.eg/media/catalog/product/cache/1ca275941aea0ae98b372dcb44b7c67a/f/i/file_69.jpg",
+    title: "التكييفات",
+    image: "Modern-air-conditioning-PNG-1-removebg-preview.png",
   },
   {
-    title: "حلاوة المولد",
-    image:
-      "https://mcprod.hyperone.com.eg/media/catalog/product/cache/1ca275941aea0ae98b372dcb44b7c67a/f/i/file_69.jpg",
+    title: "التكييفات",
+    image: "Modern-air-conditioning-PNG-1-removebg-preview.png",
   },
   {
-    title: "حلاوة المولد",
-    image:
-      "https://mcprod.hyperone.com.eg/media/catalog/product/cache/1ca275941aea0ae98b372dcb44b7c67a/f/i/file_69.jpg",
+    title: "التكييفات",
+    image: "Modern-air-conditioning-PNG-1-removebg-preview.png",
   },
   {
-    title: "حلاوة المولد",
-    image:
-      "https://mcprod.hyperone.com.eg/media/catalog/product/cache/1ca275941aea0ae98b372dcb44b7c67a/f/i/file_69.jpg",
+    title: "التكييفات",
+    image: "Modern-air-conditioning-PNG-1-removebg-preview.png",
   },
   {
-    title: "حلاوة المولد",
-    image:
-      "https://mcprod.hyperone.com.eg/media/catalog/product/cache/1ca275941aea0ae98b372dcb44b7c67a/f/i/file_69.jpg",
+    title: "التكييفات",
+    image: "Modern-air-conditioning-PNG-1-removebg-preview.png",
   },
   {
-    title: "حلاوة المولد",
-    image:
-      "https://mcprod.hyperone.com.eg/media/catalog/product/cache/1ca275941aea0ae98b372dcb44b7c67a/f/i/file_69.jpg",
+    title: "التكييفات",
+    image: "Modern-air-conditioning-PNG-1-removebg-preview.png",
   },
   {
-    title: "حلاوة المولد",
-    image:
-      "https://mcprod.hyperone.com.eg/media/catalog/product/cache/1ca275941aea0ae98b372dcb44b7c67a/f/i/file_69.jpg",
+    title: "التكييفات",
+    image: "Modern-air-conditioning-PNG-1-removebg-preview.png",
   },
   {
-    title: "حلاوة المولد",
-    image:
-      "https://mcprod.hyperone.com.eg/media/catalog/product/cache/1ca275941aea0ae98b372dcb44b7c67a/f/i/file_69.jpg",
+    title: "التكييفات",
+    image: "Modern-air-conditioning-PNG-1-removebg-preview.png",
   },
   {
-    title: "حلاوة المولد",
-    image:
-      "https://mcprod.hyperone.com.eg/media/catalog/product/cache/1ca275941aea0ae98b372dcb44b7c67a/f/i/file_69.jpg",
+    title: "التكييفات",
+    image: "Modern-air-conditioning-PNG-1-removebg-preview.png",
   },
 ]);
 </script>

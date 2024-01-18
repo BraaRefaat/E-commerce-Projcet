@@ -11,14 +11,14 @@
       <v-card elevation="0" class="px-0 mt-2 ml-2">
         <v-card-title
           class="px-0 d-flex justify-space-between align-center"
-          style="font-size: 17px; font-weight: bold; color: #9f6025"
+          style="font-size: 17px; font-weight: bold; color: #1e9ad1"
         >
           القائمة
           <v-btn
             @click="drawer = false"
             elevation="0"
             size="40"
-            color="#9f6025"
+            color="#1e9ad1"
             variant="text"
             style="border-radius: 50%"
             ><v-icon>mdi-close</v-icon></v-btn

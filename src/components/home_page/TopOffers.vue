@@ -17,7 +17,7 @@
               style="overflow: hidden; height: 100%; border-radius: 7px"
             >
               <img
-                src="../../assets/images/napoli-elmoled.jpeg"
+                src="../../assets/images/elrehab-offer1.jpg"
                 :style="`width: 100%; height: 100%; cursor: pointer; transition: 0.5s all ease-in-out;scale: ${
                   isHovering ? 1.1 : 1
                 }`"
@@ -40,7 +40,7 @@
               style="overflow: hidden; height: 100%; border-radius: 7px"
             >
               <img
-                src="../../assets/images/napoli-offer209.jpeg"
+                src="../../assets/images/elrehab-offer2.jpg"
                 :style="`width: 100%; height: 100%; cursor: pointer;transition: 0.5s all ease-in-out;scale: ${
                   isHovering ? 1.1 : 1
                 }`"
@@ -56,7 +56,7 @@
               style="overflow: hidden; height: 100%; border-radius: 7px"
             >
               <img
-                src="../../assets/images/napoli-family-offer.jpeg"
+                src="../../assets/images/elrehab-offer3.jpg"
                 :style="`width: 100%; height: 100%; cursor: pointer;transition: 0.5s all ease-in-out;scale: ${
                   isHovering ? 1.1 : 1
                 }`"
@@ -73,7 +73,7 @@
                 style="overflow: hidden; height: 100%; border-radius: 7px"
               >
                 <img
-                  src="../../assets/images/napoli-ashtota.jpg"
+                  src="../../assets/images/elrehab-offer6.jpg"
                   :style="`width: 100%; height: 100%; cursor: pointer;transition: 0.5s all ease-in-out;scale: ${
                     isHovering ? 1.1 : 1
                   }`"
@@ -89,7 +89,7 @@
                 style="overflow: hidden; height: 100%; border-radius: 7px"
               >
                 <img
-                  src="../../assets/images/napoli-ashtota.jpg"
+                  src="../../assets/images/elrehab-offer5.jpg"
                   :style="`width: 100%; height: 100%; cursor: pointer;transition: 0.5s all ease-in-out;scale: ${
                     isHovering ? 1.1 : 1
                   }`"
