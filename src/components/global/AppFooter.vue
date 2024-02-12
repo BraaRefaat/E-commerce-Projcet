@@ -15,22 +15,22 @@
                 class="pt-2 pb-3 px-0 d-flex justify-lg-center align-center justify-start"
                 style="gap: 10px"
                 ><v-icon color="#2a2a2a">mdi-map-marker</v-icon
-                ><span
-                  >امتداد ش يسري راغب برج معونه الشتاء بجوار عمارات الاوقاف
-                  ‏أسيوط‏، ‏محافظة أسيوط‏، ‏مصر‏</span
-                >
+                ><span>
+                  ابراج النصر برج (ب2) الدور الثانى علوى المدخل أمام الرقابة
+                  الأدارية ‏أسيوط‏
+                </span>
               </v-card-text>
               <v-card-text
                 class="pt-0 pb-3 px-0 d-flex align-center"
                 style="gap: 10px"
                 ><v-icon color="#2a2a2a">mdi-phone</v-icon
-                ><span>اتصل بنا <span class="number"> 0882367502</span></span>
+                ><span>اتصل بنا <span class="number">0882146147</span></span>
               </v-card-text>
               <v-card-text
                 class="pt-0 pb-3 px-0 d-flex align-center"
                 style="gap: 10px"
                 ><v-icon color="#2a2a2a">mdi-email</v-icon
-                ><span class="email">Info@kasrnapoli.com</span>
+                ><span class="email">alrehab_company@yahoo.com</span>
               </v-card-text>
             </v-card>
             <div

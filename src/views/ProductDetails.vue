@@ -165,7 +165,7 @@
 
 <script setup>
 import { ref } from "vue";
-import { VSkeletonLoader } from "vuetify/lib/labs/components.mjs";
+import { VSkeletonLoader } from "vuetify/lib/components/index.mjs";
 import { storeToRefs } from "pinia";
 import { cartModule } from "@/stores/Cart";
 import { productsModule } from "@/stores/products";
