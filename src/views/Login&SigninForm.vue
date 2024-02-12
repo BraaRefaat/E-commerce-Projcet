@@ -229,11 +229,24 @@
     />
   </div>
 
+  <v-container>
+    <v-row>
+      <v-col cols="12">
+        <v-switch
+          :label="selectedForm == true ? 'تسجيل الدخول' : 'حساب جديد'"
+          falseIcon="mdi-login"
+          trueIcon="mdi-account-plus"
+          color="#1e9ad1"
+          @click="selectedForm = !selectedForm"
+          inset
+        ></v-switch>
+      </v-col>
+    </v-row>
+  </v-container>
   <div
-    class="account-form d-flex justify-center align-center"
-    style="height: 100vh"
+    class="account-form d-flex flex-wrap justify-center align-center"
+    style="height: 100vh; overflow-y: scroll"
   >
-    <v-btn color="red" @click="selectedForm = !selectedForm">Form</v-btn>
     <LoginForm v-show="selectedForm == true" />
     <RegistrationForm v-show="selectedForm == false" />
   </div>
@@ -256,3 +269,22 @@ const particlesLoaded = async (container) => {
 
 const selectedForm = ref(true);
 </script>
+
+<style lang="scss">
+.v-main {
+  overflow-y: hidden;
+  .v-selection-control {
+    display: flex;
+    justify-content: center;
+    .v-switch__track {
+      background-color: #1e9ad1 !important;
+      opacity: 1;
+    }
+    .v-label {
+      color: #fff;
+      opacity: 1;
+      font-weight: bold;
+    }
+  }
+}
+</style>

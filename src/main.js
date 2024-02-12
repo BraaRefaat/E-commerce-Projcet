@@ -6,6 +6,10 @@ import { createPinia } from "pinia";
 // vue3-particles
 import Particles from "vue3-particles";
 
+// vueDatePicker
+import VueDatePicker from "@vuepic/vue-datepicker";
+import "@vuepic/vue-datepicker/dist/main.css";
+
 // Emitter
 import mitt from "mitt";
 const Emitter = mitt();
@@ -30,6 +34,7 @@ const vuetify = createVuetify({
 createApp(App)
   .use(vuetify)
   .use(createPinia())
+  .component("VueDatePicker", VueDatePicker)
   .use(Particles)
   .provide("Emitter", Emitter)
   .use(router)

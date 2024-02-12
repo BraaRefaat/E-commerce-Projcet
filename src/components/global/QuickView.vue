@@ -19,38 +19,16 @@
       <v-card elevation="0">
         <v-container fluid class="bg-white py-10 px-5">
           <v-row>
-            <v-col
-              cols="3"
-              sm="2"
-              md="1"
-              lg="1"
-              v-if="!loading"
-              style="height: fit-content"
-            >
-              <v-tabs
-                prev-icon="mdi-chevron-up"
-                next-icon="mdi-chevron-down"
-                direction="vertical"
-                center-active
-                v-model="tab"
-                style="max-height: 400px"
-              >
-                <v-tab
-                  :ripple="false"
-                  v-for="(img, i) in product.images"
-                  :key="i"
-                  :value="img"
-                  class="my-8"
-                >
-                  <img :src="img" style="width: 100%; height: 30px" alt="" />
-                </v-tab>
-              </v-tabs>
-            </v-col>
-            <v-col cols="9" sm="10" md="5" lg="6">
+            <v-col cols="12" sm="12" md="5" lg="6" class="text-center">
               <img
                 :src="tab ? tab : product.thumbnail"
-                class="w-100 product-image"
-                height="500"
+                class="product-image"
+                width="80%"
+                style="
+                  object-fit: contain;
+                  height: fit-content;
+                  max-height: 400px;
+                "
                 alt=""
                 v-if="!loading"
               />
@@ -58,6 +36,26 @@
                 v-if="loading"
                 type="image, image,image"
               ></v-skeleton-loader>
+              <v-col cols="12" v-if="!loading" style="height: 200px">
+                <v-tabs
+                  prev-icon="mdi-chevron-left"
+                  next-icon="mdi-chevron-right"
+                  direction="horizontal"
+                  center-active
+                  v-model="tab"
+                  height="140"
+                >
+                  <v-tab
+                    :ripple="false"
+                    v-for="(img, i) in product.images"
+                    :key="i"
+                    :value="img"
+                    class="mt-8"
+                  >
+                    <img :src="img" style="width: 100%; height: 70px" alt="" />
+                  </v-tab>
+                </v-tabs>
+              </v-col>
             </v-col>
 
             <v-col cols="12" sm="12" md="6" lg="5" class="pt-0 pl-6">

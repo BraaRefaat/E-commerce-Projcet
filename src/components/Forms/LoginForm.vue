@@ -2,7 +2,7 @@
   <form
     @submit.prevent="submit"
     class="px-8 py-6 text-center"
-    style="background-color: #1e9ad1; border-radius: 10px; width: 35%"
+    style="background-color: #1e9ad1; border-radius: 10px"
     dir="rtl"
   >
     <div class="form-title mb-6">
@@ -47,7 +47,6 @@
       :error-messages="select.errorMessage.value"
       label="Select"
       variant="solo"
-      class="mb-2"
     ></v-select>
 
     <v-checkbox
