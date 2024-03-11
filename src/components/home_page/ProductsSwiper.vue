@@ -128,14 +128,18 @@
             <v-btn
               variant="outlined"
               class="px-13 py-0"
-              style="text-transform: none; border-radius: 30px"
+              style="
+                text-transform: none;
+                border-radius: 30px;
+                letter-spacing: normal;
+              "
               @click="
                 $router.push({
                   name: 'products_details',
                   params: { productId: product.id },
                 })
               "
-              >Choose Options</v-btn
+              >عرض المنتج</v-btn
             >
           </div>
         </v-card>

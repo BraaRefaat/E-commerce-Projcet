@@ -41,22 +41,6 @@
       class="mb-2"
     ></v-text-field>
 
-    <v-select
-      v-model="select.value.value"
-      :items="items"
-      :error-messages="select.errorMessage.value"
-      label="Select"
-      variant="solo"
-    ></v-select>
-
-    <v-checkbox
-      v-model="checkbox.value.value"
-      :error-messages="checkbox.errorMessage.value"
-      value="1"
-      label="Option"
-      type="checkbox"
-    ></v-checkbox>
-
     <v-btn class="me-4" type="submit"> submit </v-btn>
 
     <v-btn @click="handleReset"> clear </v-btn>
@@ -65,7 +49,6 @@
 
 <script setup>
 import { useField, useForm } from "vee-validate";
-import { ref } from "vue";
 
 const { handleSubmit, handleReset } = useForm({
   validationSchema: {
@@ -99,10 +82,6 @@ const { handleSubmit, handleReset } = useForm({
 const name = useField("name");
 const phone = useField("phone");
 const email = useField("email");
-const select = useField("select");
-const checkbox = useField("checkbox");
-
-const items = ref(["Item 1", "Item 2", "Item 3", "Item 4"]);
 
 const submit = handleSubmit((values) => {
   alert(JSON.stringify(values, null, 2));

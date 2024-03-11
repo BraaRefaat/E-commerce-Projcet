@@ -245,7 +245,7 @@
   </v-container>
   <div
     class="account-form d-flex flex-wrap justify-center align-center"
-    style="height: 100vh; overflow-y: scroll"
+    style="overflow-y: scroll"
   >
     <LoginForm v-show="selectedForm == true" />
     <RegistrationForm v-show="selectedForm == false" />
