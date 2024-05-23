@@ -27,9 +27,44 @@ const routes = [
     component: () => import("@/views/CheckOut"),
   },
   {
-    path: "/Login-Sign-in",
+    path: "/login-sign-in",
     name: "Login_Sign_in",
     component: () => import("@/views/Login&SigninForm"),
+  },
+  {
+    path: "/dash-board",
+    name: "dash_board",
+    component: () => import("@/views/DashboardView"),
+    children: [
+      {
+        path: "home",
+        component: () => import("@/views/BoardHome.vue"),
+      },
+      {
+        path: "new-banners",
+        component: () => import("@/views/UpdateBanners.vue"),
+      },
+      {
+        path: "new-offers",
+        component: () => import("@/views/ChangeOffers.vue"),
+      },
+      {
+        path: "products",
+        component: () => import("@/views/BoardProducts.vue"),
+      },
+      {
+        path: "categories",
+        component: () => import("@/views/BoardCategories.vue"),
+      },
+      {
+        path: "add-category",
+        component: () => import("@/views/AddCategory.vue"),
+      },
+      {
+        path: "add-product",
+        component: () => import("@/views/AddProduct.vue"),
+      },
+    ],
   },
 ];
 

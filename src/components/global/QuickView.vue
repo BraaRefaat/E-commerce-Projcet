@@ -201,7 +201,6 @@
 <script setup>
 import { cartModule } from "@/stores/Cart";
 import { ref } from "vue";
-import { VSkeletonLoader } from "vuetify/lib/labs/components.mjs";
 import { onMounted, inject } from "vue";
 const tab = ref("");
 const quantity = ref(1);

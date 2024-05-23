@@ -31,7 +31,7 @@
                 border-radius: 30px;
               "
             >
-              <v-icon color="black" size="27">mdi-magnify</v-icon>
+              <v-icon color="#023047" size="27">mdi-magnify</v-icon>
             </v-btn>
           </v-col>
           <v-col cols="1"></v-col>
@@ -136,10 +136,10 @@ img {
 input {
   width: 100%;
   border-radius: 30px;
-  border: #2a2a2a 1px solid;
-  outline: none;
+  outline: transparent 3px solid;
+  transition: 0.3s all ease-in-out;
   &:focus {
-    border: #1e9ad6 3px solid;
+    outline: #1e9ad6 3px solid;
   }
 }
 li {

@@ -1,4 +1,4 @@
-# kasr-napoli-store
+# Elrehab-store
 
 ## Project setup
 ```

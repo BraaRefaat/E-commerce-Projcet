@@ -2,13 +2,24 @@
   <div class="layout">
     <v-layout class="position-relative">
       <CartDrawer v-if="$route.name != 'check_out'" />
-      <MenuDrawer />
+      <MenuDrawer v-if="$route.name != 'dash_board'" />
+
       <v-main
         :style="`margin-top: ${
           $route.name == 'check_out'
             ? '0'
             : $route.name == 'Login_Sign_in'
             ? '0'
+            : $route.name == 'dash_board' ||
+              $route.path == '/dash-board/products' ||
+              $route.path == '/dash-board/home' ||
+              $route.path == '/dash-board/categories' ||
+              $route.path == '/dash-board/add-category' ||
+              $route.path == '/dash-board/add-product' ||
+              $route.path == '/dash-board/new-offers'
+            ? '80px'
+            : $route.path == '/dash-board/new-banners'
+            ? '120px'
             : windowWidth <= 1074
             ? '80px'
             : '160px'
@@ -20,6 +31,14 @@
         v-show="
           $route.name != 'check_out' &&
           $route.name != 'Login_Sign_in' &&
+          $route.name != 'dash_board' &&
+          $route.path != '/dash-board/home' &&
+          $route.path != '/dash-board/products' &&
+          $route.path != '/dash-board/categories' &&
+          $route.path != '/dash-board/add-category' &&
+          $route.path != '/dash-board/add-product' &&
+          $route.path != '/dash-board/new-offers' &&
+          $route.path != '/dash-board/new-banners' &&
           !showFixed &&
           windowWidth > 1074
         "
@@ -28,6 +47,14 @@
         v-show="
           $route.name != 'check_out' &&
           $route.name != 'Login_Sign_in' &&
+          $route.name != 'dash_board' &&
+          $route.path != '/dash-board/home' &&
+          $route.path != '/dash-board/products' &&
+          $route.path != '/dash-board/categories' &&
+          $route.path != '/dash-board/add-category' &&
+          $route.path != '/dash-board/add-product' &&
+          $route.path != '/dash-board/new-offers' &&
+          $route.path != '/dash-board/new-banners' &&
           windowWidth <= 1074
         "
       />
@@ -35,12 +62,32 @@
         v-show="
           $route.name != 'check_out' &&
           $route.name != 'Login_Sign_in' &&
+          $route.name != 'dash_board' &&
+          $route.path != '/dash-board/home' &&
+          $route.path != '/dash-board/products' &&
+          $route.path != '/dash-board/categories' &&
+          $route.path != '/dash-board/add-category' &&
+          $route.path != '/dash-board/add-product' &&
+          $route.path != '/dash-board/new-offers' &&
+          $route.path != '/dash-board/new-banners' &&
           showFixed &&
           windowWidth > 1074
         "
       />
+
       <AppFooter
-        v-show="$route.name != 'check_out' && $route.name != 'Login_Sign_in'"
+        v-show="
+          $route.name != 'check_out' &&
+          $route.name != 'Login_Sign_in' &&
+          $route.name != 'dash_board' &&
+          $route.path != '/dash-board/home' &&
+          $route.path != '/dash-board/products' &&
+          $route.path != '/dash-board/categories' &&
+          $route.path != '/dash-board/add-category' &&
+          $route.path != '/dash-board/add-product' &&
+          $route.path != '/dash-board/new-offers' &&
+          $route.path != '/dash-board/new-banners'
+        "
       />
     </v-layout>
   </div>

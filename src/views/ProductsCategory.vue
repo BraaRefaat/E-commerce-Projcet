@@ -155,7 +155,6 @@ import { ref } from "vue";
 import { storeToRefs } from "pinia";
 import { watchEffect, onMounted, inject } from "vue";
 import { useRoute } from "vue-router";
-import { VSkeletonLoader } from "vuetify/lib/labs/components.mjs";
 import router from "@/router";
 const route = useRoute();
 const shownImage = ref({});

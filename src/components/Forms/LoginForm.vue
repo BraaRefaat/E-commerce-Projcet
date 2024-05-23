@@ -15,7 +15,7 @@
       :error-messages="name.errorMessage.value"
       dir="rtl"
       append-inner-icon="mdi-account"
-      placeholder="الاسم"
+      label="الاسم"
       variant="solo"
       class="mb-2"
     ></v-text-field>
@@ -26,7 +26,7 @@
       :error-messages="phone.errorMessage.value"
       dir="rtl"
       append-inner-icon="mdi-phone"
-      placeholder="رقم الهاتف"
+      label="رقم الهاتف"
       variant="solo"
       class="mb-2"
     ></v-text-field>
@@ -36,7 +36,7 @@
       :error-messages="email.errorMessage.value"
       dir="rtl"
       append-inner-icon="mdi-email-outline"
-      placeholder="البريد الإلكتروني"
+      label="البريد الإلكتروني"
       variant="solo"
       class="mb-2"
     ></v-text-field>
@@ -87,3 +87,16 @@ const submit = handleSubmit((values) => {
   alert(JSON.stringify(values, null, 2));
 });
 </script>
+
+<style lang="scss">
+.v-field__field {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  .v-field__input {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+}
+</style>

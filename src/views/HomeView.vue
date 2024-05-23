@@ -5,7 +5,7 @@
     <TopOffers />
     <ProductsSwiper
       :products="flashDeals"
-      title="عروض نابولي"
+      title="عروض الرحاب"
       title-color="#AE2012"
     />
     <TopCategories />

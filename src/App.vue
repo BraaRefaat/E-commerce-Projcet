@@ -7,7 +7,7 @@
       location="left bottom"
       color="#007226"
       timeout="3000"
-      style="letter-spacing: normal"
+      style="letter-spacing: normal; font-family: Tahoma"
     >
       <template v-slot:actions>
         <v-btn @click="bar = false" style="border-radius: 50%"

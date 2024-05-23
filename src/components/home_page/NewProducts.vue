@@ -159,7 +159,6 @@ import { ref } from "vue";
 import { defineProps, inject } from "vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import { Pagination } from "swiper";
-import { VSkeletonLoader } from "vuetify/lib/labs/components.mjs";
 defineProps({
   products: {
     type: Array,

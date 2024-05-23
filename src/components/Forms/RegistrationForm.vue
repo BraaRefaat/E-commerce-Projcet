@@ -19,7 +19,7 @@
                 <v-text-field
                   dir="rtl"
                   append-inner-icon="mdi-account"
-                  placeholder="الاسم"
+                  label="الاسم"
                   variant="solo"
                 ></v-text-field>
               </v-col>
@@ -28,7 +28,7 @@
                 <v-text-field
                   dir="rtl"
                   append-inner-icon="mdi-phone"
-                  placeholder="رقم الهاتف"
+                  label="رقم الهاتف"
                   variant="solo"
                 ></v-text-field>
               </v-col>
@@ -39,7 +39,7 @@
                 <v-text-field
                   dir="rtl"
                   append-inner-icon="mdi-email-outline"
-                  placeholder="البريد الإلكتروني"
+                  label="البريد الإلكتروني"
                   variant="solo"
                   class="mb-2"
                 ></v-text-field>
