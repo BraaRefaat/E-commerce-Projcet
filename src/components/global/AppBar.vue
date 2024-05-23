@@ -94,12 +94,20 @@
               </li>
             </ul>
           </v-col>
-          <v-col cols="3"></v-col>
+          <v-col cols="1"></v-col>
           <v-col cols="2">
             <div class="help">
               <v-btn>
                 <v-icon size="27" color="#F3FDFC">mdi-face-agent</v-icon>
                 <span class="mx-1" style="color: #f3fdfc">الدعم فني</span>
+              </v-btn>
+            </div>
+          </v-col>
+          <v-col cols="2">
+            <div class="help">
+              <v-btn to="/dash-board/home">
+                <v-icon size="27" color="#F3FDFC">mdi-view-dashboard</v-icon>
+                <span class="mx-1" style="color: #f3fdfc">لوحة التحكم</span>
               </v-btn>
             </div>
           </v-col>
