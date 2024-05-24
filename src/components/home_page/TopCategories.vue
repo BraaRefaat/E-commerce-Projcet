@@ -1,10 +1,10 @@
 <template>
   <div class="top-categories" dir="rtl">
-    <div class="napoli-banner">
+    <div class="elrehab-banner">
       <img
         src="../../assets/images/elrehab-mid-banner.jpg"
         class="w-100"
-        style="height: 400px"
+        style="height: 450px"
         alt=""
       />
     </div>
@@ -120,3 +120,14 @@ const categories = ref([
   },
 ]);
 </script>
+<style lang="scss">
+@media (max-width: 800px) {
+  .top-categories {
+    .elrehab-banner {
+      img {
+        object-fit: contain !important;
+      }
+    }
+  }
+}
+</style>
