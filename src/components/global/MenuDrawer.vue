@@ -39,6 +39,16 @@
               {{ category.title }}
             </v-list-title>
           </v-list-item>
+          <v-list-item
+            prepend-icon="mdi-view-dashboard"
+            @click="
+              $router.push({
+                path: '/dash-board/home',
+              })
+            "
+          >
+            <v-list-title> لوحة التحكم </v-list-title>
+          </v-list-item>
         </v-list>
       </v-card>
     </v-navigation-drawer>
